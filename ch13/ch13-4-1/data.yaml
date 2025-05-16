@@ -1,0 +1,14 @@
+train: ./data/train/images
+val: ./data/valid/images
+test: ./data/test/images
+
+nc: 3
+names: ['0', '1', '2']
+
+roboflow:
+  workspace: test-9mnwj
+  project: license-plate-ywcbx
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/test-9mnwj/license-plate-ywcbx/dataset/2
+  

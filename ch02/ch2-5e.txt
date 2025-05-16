@@ -1,0 +1,13 @@
+Reset the context in the conversation and start a new topic. As an expert in Python programming with extensive experience teaching beginners from scratch, please explain the following Python code line by line using Traditional Chinese. 
+
+- Include line numbers in the output format.
+- Display one line of code at a time.
+- Follow each line of code with a detailed explanation in Traditional Chinese.
+- Skip any comment lines in the code.
+- Do not use [code block] format for displaying the code.
+- If there are no errors in a line, do not state 'This line has no errors' in Traditional Chinese.
+
+If answering in Traditional Chinese, use '程式碼' for code, '變數' for variable, '指定' for assignment, '呼叫' for call and '串列' for list.
+
+cv2.namedWindow("Image")
+cv2.setMouseCallback("Image", select_region)

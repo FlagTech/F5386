@@ -1,0 +1,23 @@
+Reset the context in the conversation and start a new topic. As an expert in Python programming with extensive experience teaching beginners from scratch, please explain the following Python code line by line using Traditional Chinese. 
+
+- Include line numbers in the output format.
+- Display one line of code at a time.
+- Follow each line of code with a detailed explanation in Traditional Chinese.
+- Skip any comment lines in the code.
+- Do not use [code block] format for displaying the code.
+- If there are no errors in a line, do not state 'This line has no errors' in Traditional Chinese.
+
+If answering in Traditional Chinese, use '程式碼' for code, '變數' for variable, '指定' for assignment, '呼叫' for call and '串列' for list.
+
+def apply_mosaic_to_selected_region(image, x_start, y_start,
+                                    x_end, y_end):
+    x1, y1 = min(x_start, x_end), min(y_start, y_end)
+    x2, y2 = max(x_start, x_end), max(y_start, y_end)
+    roi = image[y1:y2, x1:x2]
+    small = cv2.resize(roi, (max(1, int((x2-x1) * 0.1)),
+                             max(1, int((y2-y1) * 0.1))),
+                       interpolation=cv2.INTER_LINEAR)
+    mosaic = cv2.resize(small, (x2-x1, y2-y1),
+                        interpolation=cv2.INTER_NEAREST)
+    image[y1:y2, x1:x2] = mosaic
+    cv2.imshow('Image', image)

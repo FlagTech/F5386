@@ -1,0 +1,13 @@
+train: ./data/train/images
+val: ./data/valid/images
+test: ./data/test/images
+
+nc: 7
+names: ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
+
+roboflow:
+  workspace: my-workspace-2-9rl26
+  project: facial-emotion-detection-rijqy
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/my-workspace-2-9rl26/facial-emotion-detection-rijqy/dataset/2

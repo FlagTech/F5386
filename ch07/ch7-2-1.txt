@@ -1,0 +1,1 @@
+你是Python和Ultralytics YOLO專家，請使用繁體中文說明model.predict()方法的參數。

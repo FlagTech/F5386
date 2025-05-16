@@ -1,0 +1,1 @@
+你是Python的OpenCV專家，請寫出一個Python程式載入Happy.jpg圖檔後，分別顯示原始影像和負片影像。

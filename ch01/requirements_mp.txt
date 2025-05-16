@@ -1,0 +1,5 @@
+mediapipe==0.10.20
+cvzone==1.6.1
+https://github.com/fchart/PythonCV/raw/refs/heads/main/whl_files/tflite/tflite_runtime-2.13.0-cp311-cp311-win_amd64.whl
+https://github.com/fchart/PythonCV/raw/refs/heads/main/whl_files/Dlib/dlib-19.24.1-cp311-cp311-win_amd64.whl
+face-recognition==1.3.0

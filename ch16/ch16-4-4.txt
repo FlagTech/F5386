@@ -1,0 +1,1 @@
+你是一位Llama-Vision提示詞專家，現在，我有一張Obama的照片，請寫出詳細的提示詞，可以讓Llama-Vision詳細描述這張照片的內容。
