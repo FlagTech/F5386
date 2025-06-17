@@ -14,7 +14,7 @@ cv2.imshow("Segmented Objects", annotated_image)
 result = results[0]
 img = cv2.imread(image_path)
 for idx,box in enumerate(result.boxes.xyxy):
-    x1,y1,x2,y2 = box.numpy().astype(int)
+    x1,y1,x2,y2 = box.cpu().numpy().astype(int)
     cv2.imwrite(f"{output_path}/image{idx}.png",
                 img[y1:y2,x1:x2,:])
 
