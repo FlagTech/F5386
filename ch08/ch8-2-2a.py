@@ -19,6 +19,7 @@ for idx,polygon in enumerate(result.masks.xy):
     img = cv2.cvtColor(img,cv2.COLOR_BGR2BGRA)
     mask = np.zeros_like(img,dtype=np.int32)
     cv2.fillPoly(mask,[polygon],color=(255, 255, 255))
+    # boxes.xyxy[idx].cpu()是將box資料從GPU(若用CUDA）移到CPU，因為NumPy不支援GPU張量。
     x1,y1,x2,y2 = result.boxes.xyxy[idx].cpu().numpy().astype(int)
     img = cv2.bitwise_and(img, img, mask=mask[:,:,0].astype('uint8'))
     cv2.imwrite(f"{output_path}/image{idx}.png", img[y1:y2,x1:x2,:])
